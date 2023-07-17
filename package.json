@@ -1,10 +1,10 @@
 {
   "name": "techtopweb",
   "version": "1.0.0",
-  "default": "sass.html",
+  "default": "index.html",
   "scripts": {
-    "start": "parcel sass.html",
-    "build": "parcel build sass.html --dist-dir ./dist"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Mirisa Bejko",
   "license": "ISC",
