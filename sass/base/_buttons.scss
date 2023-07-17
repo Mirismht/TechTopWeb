@@ -1,0 +1,19 @@
+.btn1 {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-primary;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 20rem;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  border: 1px solid currentColor;
+  border-radius: 3rem;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  &:hover {
+    transform: translatey(-7px);
+  }
+}

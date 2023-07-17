@@ -1,0 +1,76 @@
+#footer {
+  padding: 8rem 0;
+  background-color: #6b9080;
+  background-image: url(/img/icons/address-book.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-blend-mode: luminosity;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+    cursor: pointer;
+    text-align: left;
+    &-1 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 6rem;
+    }
+
+    &-2 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 6rem;
+    }
+  }
+
+  &-contact {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    &-icon {
+      display: flex;
+      align-self: flex-end;
+      gap: 4rem;
+      flex-wrap: wrap;
+      /* width: auto; */
+
+      align-content: stretch;
+      cursor: pointer;
+
+      & img {
+        width: 50px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        fill: azure;
+      }
+    }
+
+    &-copyright {
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: $color-white;
+    }
+  }
+}
+
+.linkdetail {
+  text-decoration: none;
+  list-style: none;
+  color: $color-white;
+
+  & p:hover {
+    transform: translatey(-7px);
+    transition: all 0.3s;
+  }
+}

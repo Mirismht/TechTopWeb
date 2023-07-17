@@ -1,0 +1,198 @@
+.service__section {
+  @include clearfix;
+  background-color: #7f9391;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+  height: 70vh;
+
+  @include respond(phone) {
+    padding: 3rem 2rem;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: $color-white;
+
+    @include respond(phone) {
+      width: auto;
+    }
+
+    & p:first-child {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    & p:last-child {
+      font-size: 4rem;
+      text-align: end;
+    }
+  }
+
+  &-img {
+    width: 350px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    position: relative;
+    background-color: #fcfcfc; /* Color of the door */
+    bottom: 0;
+    left: 0;
+    align-self: center;
+    border-radius: 50% 50% 0 0; /* Rounded top corners */
+
+    image-rendering: pixelated;
+    z-index: 2;
+
+    @include respond(phone) {
+      width: 250px;
+      height: 350px;
+    }
+  }
+
+  &-outer-line {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid $color-white; /* Color of the outer line */
+    border-radius: 50% 50% 0 0;
+  }
+
+  &-small-circle {
+    position: absolute;
+    width: 15px; /* Adjust size as needed */
+    height: 15px; /* Adjust size as needed */
+    background-color: $color-white; /* Color of the small circles */
+    border-radius: 50%;
+    z-index: 1;
+
+    &:nth-child(1) {
+      top: 40px;
+      left: 30px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    &:nth-child(3) {
+      top: 60px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      animation: bounce 1s infinite alternate;
+    }
+  }
+}
+
+.service__section-container {
+  background-color: #7f9391;
+  // display: inline;
+  // position: relative;
+  // height: 50vh;
+  // top: -190px;
+  // z-index: 3;
+  // margin-top: 2rem;
+  // background-color: $color-primary;
+  padding: 2rem 0;
+
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-website {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 15%;
+    height: 18rem;
+    /* padding-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+      padding: 1.5rem;
+      margin: 1rem;
+      width: 100px;
+    }
+
+    &:hover {
+      transform: translatey(-10);
+    }
+
+    & p {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+      font-weight: 500;
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &-list-icon {
+    width: 78px;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+    filter: hue-rotate(339deg);
+
+    @include respond(phone) {
+      width: 50px;
+    }
+  }
+}
+
+.btn-price-container {
+  text-align: center;
+  background-color: #7f9391;
+}
+
+.btn-price {
+  margin-top: 5rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  border-bottom: 1px solid $color-white;
+  display: inline-block;
+  width: auto;
+  align-self: center;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-3px);
+
+    &::after {
+      transform: scale(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+  }
+
+  &-link {
+    list-style: none;
+    text-decoration: none;
+    color: $color-white;
+  }
+}

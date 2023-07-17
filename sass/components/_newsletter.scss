@@ -1,0 +1,52 @@
+#newsletter {
+  padding: 5rem 0;
+  background-color: #ecf1f5;
+  display: none; //for the moment this section will not be displayed it is not finished yet and wont be shown
+}
+
+.newsletter__container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  &-content {
+    align-self: center;
+    &-form {
+      & form {
+        & input {
+        }
+
+        & label {
+        }
+      }
+    }
+
+    &-img {
+      position: relative;
+
+      --g: 4px; /* the gap */
+      --b: 12px; /* border thickness*/
+      --c: #28bf84; /* the color */
+
+      padding: calc(var(--g) + var(--b));
+      --_c: #0000 0 25%, var(--c) 0 50%;
+      --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+      --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+      background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+        var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+      background-size: 200% var(--b), var(--b) 200%;
+      cursor: pointer;
+      filter: grayscale(50%);
+      transition: 0.3s;
+
+      & img {
+        width: 300px;
+        height: 300px;
+      }
+
+      &:hover {
+        --_p: 75%;
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

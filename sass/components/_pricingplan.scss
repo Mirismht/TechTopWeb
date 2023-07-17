@@ -1,0 +1,141 @@
+#pricingplan {
+  background-color: #ecf1f5;
+  @include clearfix;
+}
+
+.pricingplan__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+
+  @include respond(phone) {
+  }
+
+  &-header {
+    margin-top: 5rem;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+    }
+
+    background-image: linear-gradient(
+      to right bottom,
+      $color-gray-dark,
+      $color-tertiary-light
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 2rem;
+      align-content: center;
+      gap: 2rem;
+    }
+
+    &-1 {
+      background-color: $color-white;
+      box-shadow: 0 10px 20px 0 #777;
+      border-radius: 12px;
+      width: 25.5%;
+      @include respond(phone) {
+        width: 70%;
+      }
+
+      & p {
+        font-size: 2.5rem;
+        color: $color-light;
+        margin-top: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &-2 {
+      background-color: $color-white;
+      box-shadow: 0 10px 20px 0 #777;
+      border-radius: 12px;
+      width: 25.5%;
+      @include respond(phone) {
+        width: 70%;
+      }
+
+      & p {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: $color-light;
+        margin-top: 2rem;
+      }
+    }
+
+    &-3 {
+      background-color: $color-white;
+      box-shadow: 0 10px 20px 0 #777;
+      width: 25.5%;
+      border-radius: 12px;
+
+      @include respond(phone) {
+        width: 70%;
+      }
+
+      & p {
+        color: $color-light;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &-img {
+      filter: hue-rotate(281deg);
+      width: 100px;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.information-plan {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: start;
+  &-list {
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+  }
+}
+
+.btn__price {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 1s all;
+  padding: 3rem;
+  &-link {
+    text-decoration: none;
+    list-style: none;
+    color: $color-light;
+    width: 20%;
+    border-bottom: 1px solid $color-light;
+  }
+
+  &:hover {
+    transform: translateY(-5);
+  }
+}

@@ -1,0 +1,67 @@
+#ourteam {
+  padding: 4rem 0;
+  background-color: #ecf1f5;
+}
+
+.ourteam__container {
+  display: flex;
+
+  text-align: center;
+
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  @include respond(phone) {
+  }
+
+  &-header {
+    text-align: center;
+    align-self: center;
+    & h4 {
+      margin-bottom: 4.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  &-photo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+    }
+
+    &-img {
+      padding: 1rem;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+      box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+
+      @include respond(phone) {
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      & img {
+        object-fit: cover;
+        width: 167px;
+        height: 255px;
+        margin-bottom: 1rem;
+
+        @include respond(phone) {
+          width: 150px;
+          height: 250px;
+        }
+      }
+
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

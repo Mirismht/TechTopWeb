@@ -1,0 +1,87 @@
+.section__aboutus {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-top: -10rem;
+  padding: 2rem;
+  margin: 8rem 4rem;
+
+  gap: 2rem;
+
+  @include respond(phone) {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  &-content {
+    text-align: center;
+    width: 50%;
+
+    @include respond(phone) {
+      width: auto;
+      margin: 2.5rem;
+    }
+
+    h2 {
+      font-size: 4rem;
+      color: $color-primary;
+      margin-bottom: 3rem;
+    }
+
+    & p {
+      line-height: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
+    &-icon {
+      width: 360px;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 50%;
+
+      @include respond(phone) {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      animation: border-animation 2s infinite ease-in-out;
+
+      @include respond(phone) {
+        width: 270px;
+        height: 270px;
+      }
+    }
+
+    &:before {
+      border-top-color: $color-primary;
+    }
+
+    &:after {
+      border-top-color: $color-primary;
+      animation-delay: 1s;
+    }
+  }
+}

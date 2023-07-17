@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*font-size: 10px; so four our website 1rem is 10 px */
+  font-size: 62.5%; /*is the same as 10px(.625*16=10)*/ // or 10/16=0.625*100=62.5
+
+  /*@include respond(phone) {  //this will not apply as we set the 50% that is the same as the tab port
+    font-size: 50%;
+  }*/
+  overflow-x: hidden;
+  //the larger ones before the smaller
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+
+  @include respond(tab-land) {
+    //width < 1200
+    font-size: 56.25%; //1rem= 9px, 9/16=56.25%
+  }
+
+  @include respond(tab-port) {
+    //width < 900
+    font-size: 50%; //1rem= 8px, 8/16=50%
+  }
+
+  @include respond(big-desktop) {
+    // width > 1800
+    font-size: 75%; //1rem = 12px , 12/16=75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0; //to expand the background and not having the white space around the main background
+  }
+}
+
+::selection {
+  //when the user or we select the text it will have this style
+  background-color: $color-primary;
+  color: $color-white;
+}
