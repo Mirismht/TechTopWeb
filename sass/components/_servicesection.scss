@@ -5,8 +5,8 @@
   justify-content: space-around;
   text-align: center;
   align-items: center;
-
-  height: 70vh;
+  padding: 4rem 2rem;
+  // height: 70vh;
 
   @include respond(phone) {
     padding: 3rem 2rem;
