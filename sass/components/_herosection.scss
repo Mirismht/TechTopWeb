@@ -104,7 +104,8 @@
     }
 
     &-item {
-      width: min(100%, 500px);
+      width: 100%;
+      max-width: 500px;
     }
   }
 }
