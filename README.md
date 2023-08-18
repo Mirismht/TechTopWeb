@@ -39,16 +39,14 @@ TechTopWeb was built using the following skills and technologies:
 
 Feel free to contact me for any inquiries or feedback:
 
-- Email: your.email@example.com
+- Email: mirisabejko@outlook.com
 
 ## Acknowledgments
 
 I would like to acknowledge the following resources and tools that contributed to the development of TechTopWeb:
 
-- [Bootstrap](https://getbootstrap.com/)
+
 - [Font Awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com/)
 
-## License
 
-This project is licensed under the [MIT License](insert_license_url_here).
