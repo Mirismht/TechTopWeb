@@ -21,7 +21,7 @@ Users can interact with TechTopWeb to access information through different secti
 
 - Hero section with an introduction to the website's purpose.
 - User form for capturing and storing personal information.
-- Sections that explain about services provided by the webpage.
+- Sections that explain services provided by the webpage.
 
 ## Screenshots or Demo
 
@@ -46,8 +46,5 @@ Feel free to contact me for any inquiries or feedback:
 
 I would like to acknowledge the following resources and tools that contributed to the development of TechTopWeb:
 
-
 - [Font Awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com/)
-
-
