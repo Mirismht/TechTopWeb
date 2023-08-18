@@ -1,7 +1,6 @@
 # TechTopWeb
 
-
-![TechTopWeb Screenshot](insert_screenshot_or_demo_image_url_here)
+![TechTopWeb Screenshot](./img/techtopweb.png)
 
 ## Project Description
 
@@ -14,6 +13,7 @@ To run this project locally, you can either download the files directly from the
 ## Usage
 
 Users can interact with TechTopWeb to access information through different sections. The main functionalities include:
+
 - Exploring the hero section that introduces the website's purpose.
 - Filling in personal information that gets stored in the local storage and sent to the client.
 
@@ -29,6 +29,7 @@ Check out the live demo of TechTopWeb: [Live Demo](https://techtopweb.netlify.ap
 ## Technologies Used
 
 TechTopWeb was built using the following skills and technologies:
+
 - HTML
 - CSS
 - SASS
@@ -37,11 +38,13 @@ TechTopWeb was built using the following skills and technologies:
 ## Contact Information
 
 Feel free to contact me for any inquiries or feedback:
+
 - Email: your.email@example.com
 
 ## Acknowledgments
 
 I would like to acknowledge the following resources and tools that contributed to the development of TechTopWeb:
+
 - [Bootstrap](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com/)
