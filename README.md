@@ -21,6 +21,7 @@ Users can interact with TechTopWeb to access information through different secti
 
 - Hero section with an introduction to the website's purpose.
 - User form for capturing and storing personal information.
+- Sections that explain about services provided by the webpage.
 
 ## Screenshots or Demo
 
