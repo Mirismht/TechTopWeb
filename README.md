@@ -8,7 +8,7 @@ TechTopWeb is a real Single-Page Application (SPA) project that aims to provide 
 
 ## Installation
 
-To run this project locally, you can either download the files directly from the [GitHub repository](insert_github_repo_url_here) or visit my [portfolio](https://mirisabejko.netlify.app/) for additional details.
+To run this project locally, you can either download the files directly from the [GitHub repository](https://github.com/Mirismht/TechTopWeb) or visit my [portfolio](https://mirisabejko.netlify.app/) for additional details.
 
 ## Usage
 
